@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="20dp"
+    android:elevation="8dp">
+
+    <!-- Header Section with Gradient -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/header_gradient_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:elevation="2dp">
+        
+        <ImageView
+            android:id="@+id/bmiIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_health"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="BMI Calculator"
+            android:background="@drawable/icon_circle_background"
+            android:padding="6dp" />
+            
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI Calculator"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-medium" />
+                
+            <TextView
+                android:id="@+id/subtitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Monitor"
+                android:textSize="12sp"
+                android:textColor="#E8F4FD"
+                android:fontFamily="sans-serif-light" />
+        </LinearLayout>
+            
+        <ImageButton
+            android:id="@+id/refreshButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_refresh"
+            android:background="@drawable/refresh_button_background"
+            android:contentDescription="Refresh"
+            android:padding="6dp" />
+    </LinearLayout>
+
+    <!-- Main BMI Display Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/main_card_background"
+        android:padding="20dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp">
+        
+        <TextView
+            android:id="@+id/bmiValueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI: 23.4"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-condensed" />
+            
+        <TextView
+            android:id="@+id/categoryText"
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:text="Category: Normal Weight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#27AE60"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/category_badge_background"
+            android:padding="8dp"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <!-- Health Tip Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/tip_card_background"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="2dp"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="💡"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/tip_icon_background"
+            android:layout_marginEnd="12dp" />
+        
+        <TextView
+            android:id="@+id/healthTipText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Great job! Keep maintaining your healthy lifestyle with regular exercise and balanced nutrition."
+            android:textSize="12sp"
+            android:textColor="#2C3E50"
+            android:lineSpacingExtra="2dp"
+            android:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <!-- Footer Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/footer_background"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+        
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_clock"
+            android:layout_marginEnd="6dp"
+            android:alpha="0.7" />
+        
+        <TextView
+            android:id="@+id/lastUpdatedText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Last updated: Just now"
+            android:textSize="11sp"
+            android:textColor="#7F8C8D"
+            android:fontFamily="sans-serif-light" />
+            
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/status_indicator"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

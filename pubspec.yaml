@@ -1,0 +1,259 @@
+name: fitness
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  #carousel_slider: 4.1.1
+ 
+
+  fl_chart: ^0.64.0
+  simple_animation_progress_bar: ^1.9.2
+  dotted_dashed_line: ^0.0.3
+  simple_circular_progress_bar: ^1.0.2
+  animated_toggle_switch: ^0.8.5
+  readmore: ^3.0.0
+  http_image_provider: ^1.1.0
+  fpdart: ^1.1.1
+  intl:  ^0.18.1 
+
+  calendar_agenda:
+    path: ./packages/calendar_agenda
+  carousel_slider: ^5.1.1
+  firebase_auth: ^5.6.0
+  google_sign_in: ^6.3.0
+  firebase_core: ^3.14.0
+  shared_preferences: ^2.2.0
+  confetti: ^0.7.0
+  drop_down_list: ^2.0.0
+  cloud_firestore: 5.6.9
+  timezone: ^0.9.2
+  path_provider: ^2.1.1
+  firebase_messaging: 15.2.7
+  flutter_local_notifications: ^18.0.1
+  http: ^1.2.0
+  googleapis_auth: ^1.6.0
+  animate_do: ^3.0.2
+  home_widget: ^0.8.0
+  flutter_svg: ^2.2.0
+  permission_handler: ^12.0.0+1
+
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/img/activity_tab_select.png
+    - assets/img/activity_tab.png
+    - assets/img/alaarm.png
+    - assets/img/apple_pie.png
+    - assets/img/ArrowLeft.png
+    - assets/img/ArrowRight.png
+    - assets/img/baking_soda.png
+    - assets/img/barbell.png
+    - assets/img/Bed_Add.png
+    - assets/img/bell.png
+    - assets/img/bed.png
+    - assets/img/bg_dots.png
+    - assets/img/black_btn.png
+    - assets/img/bottle.png
+    - assets/img/burn.png
+    - assets/img/c_1.png
+    - assets/img/c_2.png
+    - assets/img/c_3.png
+    - assets/img/c_4.png
+    - assets/img/camera_tab_select.png
+    - assets/img/camera_tab.png
+    - assets/img/carbo.png
+    - assets/img/chicken.png
+    - assets/img/choose_workout.png
+    - assets/img/closed_btn.png
+    - assets/img/coffee.png
+    - assets/img/complete_profile.png
+    - assets/img/complete_workout.png
+    - assets/img/date_notifi.png
+    - assets/img/date.png
+    - assets/img/detail_top.png
+    - assets/img/difficulity.png
+    - assets/img/egg.png
+    - assets/img/eggs.png
+    - assets/img/email.png
+    - assets/img/f_1.png
+    - assets/img/f_2.png
+    - assets/img/facebook.png
+    - assets/img/fav.png
+    - assets/img/Filter.png
+    - assets/img/flour.png
+    - assets/img/foot.png
+    - assets/img/gender.png
+    - assets/img/glass-of-milk 1.png
+    - assets/img/goal_1.png
+    - assets/img/goal_2.png
+    - assets/img/goal_3.png
+    - assets/img/google.png
+    - assets/img/hight.png
+    - assets/img/home_tab_select.png
+    - assets/img/home_tab.png
+    - assets/img/honey_pan.png
+    - assets/img/HoursTime.png
+    - assets/img/img_1.png
+    - assets/img/img_2.png
+    - assets/img/lock.png
+    - assets/img/m_1.png
+    - assets/img/m_2.png
+    - assets/img/m_3.png
+    - assets/img/m_4.png
+    - assets/img/more_btn.png
+    - assets/img/More_V.png
+    - assets/img/next_go.png
+    - assets/img/nap.png
+    - assets/img/next_icon.png
+    - assets/img/nigiri.png
+    - assets/img/no_bell.png
+    - assets/img/notification_active.png
+    - assets/img/oatmeal.png
+    - assets/img/on_1.png
+    - assets/img/on_2.png
+    - assets/img/on_3.png
+    - assets/img/on_4.png
+    - assets/img/orange.png
+    - assets/img/p_achi.png
+    - assets/img/p_activity.png
+    - assets/img/p_contact.png
+    - assets/img/p_next.png
+    - assets/img/p_notification.png
+    - assets/img/p_personal.png
+    - assets/img/p_privacy.png
+    - assets/img/p_setting.png
+    - assets/img/p_workout.png
+    - assets/img/pancake_1.png
+    - assets/img/pic_4.png
+    - assets/img/pic_5.png
+    - assets/img/Play.png
+    - assets/img/pp_1.png
+    - assets/img/pp_2.png
+    - assets/img/pp_3.png
+    - assets/img/pp_4.png
+    - assets/img/pp_5.png
+    - assets/img/pp_6.png
+    - assets/img/pp_7.png
+    - assets/img/pp_8.png
+    - assets/img/profile_tab_select.png
+    - assets/img/profile_tab.png
+    - assets/img/profile_tab_select.png
+    - assets/img/progress_each_photo.png
+    - assets/img/proteins.png
+    - assets/img/rd_1.png
+    - assets/img/Repeat.png
+    - assets/img/repetitions.png
+    - assets/img/salad.png
+    - assets/img/search.png
+    - assets/img/share.png
+    - assets/img/show_password.png
+    - assets/img/skipping_rope.png
+    - assets/img/sleep_grap.png
+    - assets/img/sleep_schedule.png
+    - assets/img/SleepGraph.png
+    - assets/img/sub_menu.png
+    - assets/img/sugar.png
+    - assets/img/time_workout.png
+    - assets/img/time.png
+    - assets/img/u1.png
+    - assets/img/u2.png
+    - assets/img/user_text.png
+    - assets/img/Vibrate.png
+    - assets/img/video_temp.png
+    - assets/img/water.png
+    - assets/img/weight.png
+    - assets/img/welcome.png
+    - assets/img/what_1.png
+    - assets/img/what_2.png
+    - assets/img/what_3.png
+    - assets/img/Workout1.png
+    - assets/img/Workout2.png
+    - assets/img/Workout3.png
+    - assets/img/ArrowLeft.png
+    - assets/img/ArrowRight.png
+    - assets/img/sleep_loader.svg
+    - assets/audio/alarm.mp3
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/font/Poppins-Regular.ttf
+        - asset: assets/font/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/font/Poppins-Bold.ttf
+          weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
